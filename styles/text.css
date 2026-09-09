@@ -1,0 +1,202 @@
+p {
+    font-family: Roboto;
+    margin-top: 10px;
+    ;
+    margin-bottom: 10px;
+}
+
+.video-title {
+
+    font-weight: bold;
+    font-size: 18px;
+    width: 300px;
+    line-height: 30px;
+}
+
+.video-stats {
+
+    color: #606060;
+
+}
+
+.channel-name {
+    color: #606060;
+    margin-top: 2px;
+}
+
+.video-script {
+    line-height: 25px;
+    ;
+    color: #606060;
+    width: 300px;
+    margin-bottom: 90px;
+}
+
+.apple-banner {
+    background-color: rgb(227, 65, 64);
+    padding: 18px;
+    width: max-content;
+    color: white;
+}
+
+.shop-link {
+    cursor: pointer;
+}
+
+.shop-link:hover {
+    text-decoration: underline;
+}
+
+.font {
+    font-family: Tahoma;
+    font-weight: bold;
+}
+
+.title {
+    font-family: Arial;
+}
+
+.sale {
+    color: orangered;
+    font-family: tahoma;
+
+}
+
+.title {
+    font-family: verdana;
+    font-weight: bold;
+}
+
+.subtitle {
+    color: rgb(100, 100, 100);
+    font-family: verdana;
+}
+
+.description {
+    font-family: verdana;
+    font-size: 18px;
+    width: 330px;
+}
+
+.start-button {
+    height: 36px;
+    width: 120px;
+    color: white;
+    background-color: green;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+
+
+.name {
+    color: orangered;
+    font-family: arial;
+    margin-left: 100px;
+    margin-bottom: 0px;
+}
+
+.heading {
+    font-family: arial;
+    font-weight: bold;
+    margin-left: 60px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+.main-heading {
+    font-family: arial;
+    font-weight: bold;
+    font-size: 25px;
+    ;
+    margin-top: 6px;
+    margin-bottom: 0px;
+}
+
+.price {
+    font-family: arial;
+    font-size: 15px;
+    margin-left: 80px;
+    margin-top: 8px;
+
+}
+
+.buy {
+    background-color: rgb(47, 154, 247);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    height: 30px;
+    width: 50px;
+    margin-left: 95px;
+}
+
+.buy:hover {
+    cursor: pointer;
+}
+
+.price-container {
+    font-family: arial;
+    width: 250px;
+    margin-bottom: 6px;
+
+}
+
+.main-price {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.currency {
+    color: grey;
+}
+
+.change-container {
+    color: green;
+    margin-top: 0px;
+}
+
+.after-hours {
+    color: grey;
+}
+
+.negative-change {
+    color: brown;
+}
+
+.website-name {
+    font-family: arial;
+    margin-bottom: 0px;
+}
+
+.url {
+    font-weight: bold;
+}
+
+.name-website {
+    color: grey;
+}
+
+.description1 {
+    width: 510px;
+    font-size: 18px;
+}
+
+.description2 {
+    font-size: 18px;
+
+}
+
+.link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: black;
+
+}
+
+.link {
+    color: rgb(70, 191, 239);
+}
