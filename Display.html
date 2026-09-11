@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Elements</title>
+    <style>
+        .thumbnail {
+            width: 300px;
+            object-fit: cover;
+        }
+
+        .search-bar {
+            font-size: 22px;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.9);
+            display:block;
+        }
+
+        .condition {
+            font-family: arial;
+            font-size: 20px;
+            width: 500px;
+        }
+
+        .email-box {
+            font-size: 22px;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.9);
+        }
+
+        .agree-button {
+            height: 40px;
+            width: 250px;
+            color: white;
+            background-color: rgb(8, 102, 196);
+            border: none;
+            border-radius: 18px;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        .agree-button:hover {
+            cursor: pointer;
+            background-color: rgb(255, 0, 0);
+            color: rgb(0, 0, 0);
+        }
+
+        .twitter-box {
+            height: 45px;
+            width: 355px;
+            display: flex;
+            align-items: center;
+            /* border:2px solid gray; */
+            box-shadow:0px 0px 6px rgba(219, 11, 11, 0.9);
+            border-radius:8px;
+        }
+
+        .tweet {
+            height: 30px;
+            width: 70px;
+            color: white;
+            background-color: rgb(10, 132, 180);
+            border: none;
+            border-radius: 14px;
+            font-weight: bold;
+        }
+
+        .cat {
+            width: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        input{
+            flex:1;
+            border:none;
+            outline:none;
+        }
+        .para{
+            display: inline-block;
+            width:200px;
+            vertical-align:middle;
+        }
+        .heading{
+            margin-left:250px;
+            font-family: sans-serif;
+            font-size:40px;
+            font-weight:bold;
+            margin-bottom:0px;
+        }
+        .g,
+        .G{
+            color:rgb(0, 132, 255);
+            
+        }
+        .o{
+            color:red;
+        }
+        .O{
+            color:gold;
+        }
+        .L{
+            color:green;
+        }
+        .E{
+            color:red;
+        }
+        .g-search{
+            margin-left:110px;
+            height:30px;
+            width:400px;
+            margin-top:8px;
+            box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.4);
+            border:none;
+            border-radius:12px;
+            padding-left:10px;
+            margin-bottom:40px;
+            display:block;
+        }
+        .name{
+            height: 30px;
+            width: 180px;
+            border:1px solid black;
+            border-radius: 5px;
+            margin-bottom:8px;
+            
+
+        }
+        .email{
+            height: 30px;
+            width: 370px;
+            border:1px solid black;
+            border-radius: 5px;
+            display:block;
+
+        }
+        .signup{
+            display:block;
+            margin-top:8px;
+            height:46px;
+            width:370px;
+            border-radius:8px;
+            font-weight: bold;
+            font-size: 16px;
+            color:white;
+            background-color: royalblue;
+            border:none;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="thumbnail" src="images/thumbnail1.avif" >
+
+    <input class="search-bar" type="text" placeholder="Search" >
+    <br /><br />
+    <p>Email</p>
+    <input class="email-box" type="text" placeholder="Email" >
+    <p class="condition">
+        By clicking Agree & join , you agree to the privacy policy
+    </p>
+    <button class="agree-button">Agree & join</button>
+
+    <p>Twitter text box</p>
+    <div class="twitter-box">
+        <img class="cat" src="images/cat.jpg" />
+        <input type="text" placeholder="What's happening?" />
+        <button class="tweet">Tweet</button>
+    </div>
+    <p class = "para">Thank for chatting with our customer support.would you like to take our quick servey?</p>
+
+    <button>Yes</button>
+    <button>No</button>
+
+    <p class = "heading">
+        <span class ="G">G</span><span class ="o">o</span><span class ="O">o</span><span class ="g">g</span><span class ="L">l</span><span class ="E">e</span>
+    </p>
+    <input class ="g-search" type = "text" placeholder = "Search Google or type a URL">
+
+    <input class = "name" type = "text" placeholder ="First name">
+    <input class = "name" type = "text" placeholder ="last name">
+    <input class = "email" type = "text" placeholder = "Email">
+    <button class = "signup">Sign Up</button>
+</body>
+
+</html>
