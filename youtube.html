@@ -1,21 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Youtube Clone</title>
     <style>
-        .thumbnail{
-            width:300px;
-            object-fit:cover;
+        .thumbnail {
+            width: 300px;
+            object-fit: cover;
         }
-        .search-bar{
-           font-size: 22px;
+
+        .search-bar {
+            font-size: 22px;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.9);
+        }
+
+        .condition {
+            font-family: arial;
+            font-size: 20px;
+            width: 500px;
+        }
+
+        .email-box {
+            font-size: 22px;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.9);
+        }
+
+        .agree-button {
+            height: 40px;
+            width: 250px;
+            color: white;
+            background-color: rgb(8, 102, 196);
+            border: none;
+            border-radius: 18px;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        .agree-button:hover {
+            cursor: pointer;
+            background-color: rgb(255, 0, 0);
+            color: rgb(0, 0, 0);
+        }
+
+        .twitter-box {
+            height: 45px;
+            width: 355px;
+            display: flex;
+            align-items: center;
+            /* border:2px solid gray; */
+            box-shadow:0px 0px 6px rgba(219, 11, 11, 0.9);
+            border-radius:8px;
+        }
+
+        .tweet {
+            height: 30px;
+            width: 70px;
+            color: white;
+            background-color: rgb(10, 132, 180);
+            border: none;
+            border-radius: 14px;
+            font-weight: bold;
+        }
+
+        .cat {
+            width: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        input{
+            flex:1;
+            border:none;
+            outline:none;
         }
     </style>
 </head>
+
 <body>
-    <img class = "thumbnail" src ="images/thumbnail1.avif">
-    <input class = "search-bar" type="text" placeholder ="Search">
+    <img class="thumbnail" src="images/thumbnail1.avif" />
+
+    <input class="search-bar" type="text" placeholder="Search" />
+    <br /><br />
+    <p>Email</p>
+    <input class="email-box" type="text" placeholder="Email" />
+    <p class="condition">
+        By clicking Agree & join , you agree to the privacy policy
+    </p>
+    <button class="agree-button">Agree & join</button>
+
+    <p>Twitter text box</p>
+    <div class="twitter-box">
+        <img class="cat" src="images/cat.jpg" />
+        <input type="text" placeholder="What's happening?" />
+        <button class="tweet">Tweet</button>
+    </div>
 </body>
+
 </html>
