@@ -149,6 +149,35 @@
             background-color: royalblue;
             border:none;
         }
+        .uber{
+            height:40px;
+            width:370px;
+            border:none;
+            margin-bottom:8px;
+            background-color: rgb(230, 227, 227);
+            display:block;
+        }
+        .request{
+            height:45px;
+            width:120px;
+            background-color: black;
+            color:white;
+            margin-left:0px;
+            margin-right:8px;
+            transition: 0.9s;
+            border:none;
+        }
+        .request:hover{
+            cursor: pointer;
+            background-color: gray;
+            color:black;
+        }
+        .schedule{
+            height:45px;
+            width:140px;
+            color:black;
+            border:none;
+        }
     </style>
 </head>
 
@@ -184,6 +213,17 @@
     <input class = "name" type = "text" placeholder ="last name">
     <input class = "email" type = "text" placeholder = "Email">
     <button class = "signup">Sign Up</button>
+    <h2>
+        Request a ride now
+    </h2>
+    <input class = "uber" type = "text" placeholder="Enter pickup location">
+    <input class = "uber" type = "text" placeholder="enter destination">
+    <button class = "request">
+        Request now
+    </button>
+    <button class = "schedule">
+        Schedule for later
+    </button>
 </body>
 
 </html>
