@@ -1,54 +1,127 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youtube clone</title>
-    <style>
-        .search-bar{
-            height:36px;
-            width:250px;
-            display:block;
-            margin-bottom:10px;
-            align-items: center;
-            margin:0 auto;
-            
-        }
-        .thumbnail1{
-            width:300px;
-            display:inline-block;
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet" />
+
+    <title>YouTube Clone</title>
+
+    <style>
+        body{
+            font-family: Roboto,Arial;
+            margin-top:0;
+            margin-bottom:0;
         }
-        .video-title{
-            width:300px;
+
+        .search-bar {
+            height: 36px;
+            width: 250px;
+            display: block;
+            margin: 0 auto 10px auto;
         }
-        .video-preview{
-            width:300px;
+
+        .thumbnail1 {
+            width: 300px;
+            display: block;
+        }
+
+        .video-title {
+            margin-top: 0;
+            font-size:14px;
+            font-weight:500;
+            margin-bottom: 12px;
+        }
+
+        .video-preview {
+            width: 300px;
             display: inline-block;
             vertical-align: top;
-            margin-right:50px;
+            margin-right: 50px;
         }
 
+        .channel-picture {
+            display: inline-block;
+            width: 50px;
+            vertical-align: top;
+        }
+
+        .video-info {
+            display: inline-block;
+            width: 200px;
+        }
+
+        .profile-picture {
+            width: 40px;
+            border-radius: 50px;
+        }
+
+        .thumbnail1-row {
+            margin-bottom: 12px;
+        }
+        .channel-name{
+            font-size:12px;
+            color:rgb(96,96,96);
+            margin-bottom:0px;
+        }
+        .video-stats{
+            font-size:12px;
+            color:rgb(96,96,96);
+            margin-top:4px;
+        }
     </style>
 </head>
+
 <body>
-    <input class = "search-bar" type ="text" placeholder="Search">
-    <div class = "video-preview">
-        <img class="thumbnail1" src="../images/thumbnail1.avif">
-    <p class = "video-title">
-        Kaala Asla - MC SQUARE | Simran Choudhary | Nikhil - Swapnil
-    </p>
-    <p class = "video-stats">2M views &middot; 2 days ago</p>
-    <p class = "channel-name">MC SQUARE</p>
+    <input class="search-bar" type="text" placeholder="Search" />
+
+    <div class="video-preview">
+        <div class="thumbnail1-row">
+            <img class="thumbnail1" src="../images/thumbnail1.avif" alt="Video thumbnail" />
+        </div>
+
+        <div class="channel-picture">
+            <img class="profile-picture" src="../images/channel-image.jpg" />
+        </div>
+        <div class="video-info">
+            <p class="video-title">
+                Kaala Asla - MC SQUARE | Simran Choudhary | Nikhil - Swapnil
+            </p>
+
+            <p class="channel-name">MC SQUARE</p>
+
+            <p class="video-stats">2M views &middot; 2 days ago</p>
+
+            
+        </div>
     </div>
-    <div class = "video-preview">
-        <img class="thumbnail1" src="../images/thumbnail2.avif">
-    <p class = "video-title">
-        Vikram Sarkar - Scene (Official Video)| Thought | Deepesh Goyal
-    </p>
-    <p class = "channel-name">VYRL Harayanvi &#128504; &#x2714; and Vikram Sarkar</p>
-    <p class = "video-stats">408K &middot; 9 hours ago</p>
-    
+
+    <div class="video-preview">
+        <div class="thumbnail1-row">
+            <img class="thumbnail1" src="../images/thumbnail2.avif" alt="Video thumbnail" />
+        </div>
+
+        <div class="channel-picture">
+            <img class="profile-picture" src="../images/channel-image2.jpg" />
+        </div>
+        <div class="video-info">
+            <p class="video-title">
+                Vikram Sarkar - Scene(Official Video) | Thought | Deepesh Goyal | VYRL Harayanvi
+            </p>
+
+            <p class="channel-name">VYRL Harayanvi and Vikram Sarkar</p>
+
+            <p class="video-stats">2.6M views &middot; 5 days ago</p>
+
+            
+        </div>
     </div>
-    
+</body>
+
 </html>
