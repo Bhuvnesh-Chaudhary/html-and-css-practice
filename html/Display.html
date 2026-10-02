@@ -466,29 +466,37 @@
     </div>
 
     <style>
-        .card3{
+        .card3 {
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-            width:200px;
-            
-            margin-left:200px;
+            width: 180px;
+            overflow: hidden;
+            margin-left: 200px;
             margin-bottom: 50px;
+            border: 3px solid rgb(0, 0, 0);
+            border-radius: 6px;
         }
-        .cat3{
-            width:200px;
-            height:220px;
+
+        .cat3 {
+            width: 200px;
+            height: 220px;
         }
-        .friend-image{
-            width:30px;
-            border-radius:50%;
-            margin-left:5px;
+
+        .friend-image {
+            width: 30px;
+            border-radius: 50%;
+            margin-left: 5px;
+            vertical-align: middle;
         }
-        .friends3{
-            color:gray;
-            display:inline;
-            margin-left:10px;
-            
+
+        .friends3 {
+            color: gray;
+            display: inline;
+            margin-left: 10px;
+            margin-top:0px;
+            margin-bottom:0px;
         }
-        .add3{
+
+        .add3 {
             background-color: #3875db;
             color: white;
             border: none;
@@ -497,39 +505,93 @@
             height: 35px;
             width: 100px;
             cursor: pointer;
-            margin-top:30px;
-            margin-bottom:10px;
+            margin-top: 25px;
+            margin-bottom: 10px;
 
-            transition: background-color 0.3s;
+            transition: background-color 0.25s, transform 0.25s;
         }
-        .add3:hover{
+
+        .add3:hover {
             background-color: #5c8ee5;
+            transform: translateY(-1px);
         }
-        .name3{
-            margin-left:5px;
-        }
-        .mutual-friend{
-            display: flex;
-            align-items:center
 
+        .name3 {
+            margin-left: 5px;
+            margin-bottom: 5px;
+        }
+
+        .mutual-friend {
+            display: flex;
+            align-items: center;
         }
     </style>
-    <div class = "card3">
-        <img class = "cat3" src="../images/cat3.png">
-        <p class = "name3">
+    <div class="card3">
+        <img class="cat3" src="../images/cat3.png">
+        <p class="name3">
             <Strong>Oliver</Strong>
         </p>
-        <div class = "mutual-friend">
-            <img class = "friend-image" src="../images/friend-image.png">
+        <div class="mutual-friend">
+            <img class="friend-image" src="../images/friend-image.png">
 
-        <p class = "friends3">
-            2 mutual friends
+            <p class="friends3">
+                2 mutual friends
+            </p>
+        </div>
+        <button class="add3">
+            Add Friend
+        </button>
+    </div>
+
+    <style>
+        .card4{
+            margin-left:100px;
+            width:200px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
+            padding:18px;
+            margin-bottom:20px;
+            transition:transform 0.2s,box-shadow 0.2s;
+        }
+        .card4:hover{
+            transform:translateY(-3px);
+            box-shadow:0px 8px 20px rgba(0,0,0,0.16);
+        }
+        .cat4{
+            width:180px;
+            height:180px;
+            display:block;
+            margin-left:10px;
+            overflow:hidden;
+            border-radius:50%;
+            object-fit:cover;
+        }
+        .name4{
+            margin-left:5px;
+            margin-top: 10px;
+            font-size:22px;
+        }
+        .friends3{
+            margin-top:5px;
+        }
+        .friend-image{
+            margin-top:5px;
+        }
+        .mutual-friend
+    </style>
+    <div class="card4">
+        <img class="cat4" src="../images/cat4.jpg">
+        <p class="name4">
+            <Strong>Mimi</Strong>
         </p>
+        <div class="mutual-friend">
+            <img class="friend-image" src="../images/friend-image.png">
+            <p class="friends3">
+                5 mutual friends
+            </p>
         </div>
         <button class = "add3">
             Add Friend
         </button>
     </div>
 </body>
-
 </html>
