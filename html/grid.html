@@ -1,14 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grid</title>
 </head>
 
 <body>
-
     <style>
         .container {
             display: grid;
@@ -41,33 +40,72 @@
             grid-area: footer;
             border: 2px solid black;
         }
+
         .container1 {
-    display: grid;
-    height: 300px;
-    border: 2px solid black;
+            display: grid;
+            height: 300px;
+            border: 2px solid black;
 
-    margin-bottom:20px;
-    place-items:center;
-}
+            margin-bottom: 20px;
+            place-items: center;
+        }
 
-.box {
-    border: 2px solid red;
-    width:200px;
-    height:200px;
-    place-items:center;
-    display:grid
-}
-.container2{
-    display:grid;
-    width:500px;
-    height: 300px;
-    grid-template-columns: 100px ;
-    border:2px solid black;
-    place-content: center;
-}
-.box1{
-    border:2px solid red;
-}
+        .box {
+            border: 2px solid red;
+            width: 200px;
+            height: 200px;
+            place-items: center;
+            display: grid;
+        }
+
+        .container2 {
+            display: grid;
+            width: 500px;
+            height: 300px;
+            grid-template-columns: 100px;
+            border: 2px solid black;
+            place-content: center;
+            margin-bottom: 20px;;
+        }
+
+        .box1 {
+            border: 2px solid red;
+        }
+
+        .timetable {
+            display: grid;
+            grid-template-columns: 100px repeat(5,minmax(100px,1fr));
+            /* gap: 5px; */
+            justify-content: center;
+            
+        }
+        .timetable div{
+            border:2px solid black;
+            padding:12px;
+            text-align:center;
+            border-radius:5px;
+            overflow-wrap:break-word;
+            line-height:1.4;
+            font-size:16px;
+            transition: 0.25s;
+        }
+        .timetable div:hover:not(.heading,.lunch){
+            background-color: lightblue;
+        }
+        .timetable .heading{
+            font-weight:bold;
+            background-color: lightgray;
+            color:darkblue;
+            font-size:20px;
+        }
+        .lunch{
+            font-weight:bold;
+            background-color: lightgray;
+        }
+        .lunch:hover{
+            background-color: greenyellow;
+        }
+        
     </style>
     <div class="container">
         <div class="header">Header</div>
@@ -84,7 +122,66 @@
         <div class="box1">Box1</div>
         <!-- <div class="box1">Box2</div> -->
     </div>
-    
+
+    <div class="timetable">
+        <div class ="heading">Time</div>
+        <div class ="heading">Monday</div>
+        <div class ="heading">Tuesday</div>
+        <div class ="heading">Wednesday</div>
+        <div class ="heading">Thursday</div>
+        <div class ="heading">Friday</div>
+        <!--
+---- first row--- -->
+        <div>9-10</div>
+        <div>Artificial Intelligence and Machine Learning</div>
+        <div>DBMS</div>
+        <div>OOPs</div>
+        <div>CN</div>
+        <div>Python</div>
+
+        <div>10-11</div>
+        <div>Java</div>
+        <div>DBMS</div>
+        <div>Python</div>
+        <div></div>
+        <div>OS</div>
+
+        <!-- third row -->
+        <div>11-12</div>
+        <div>Java</div>
+        <div>Maths</div>
+        <div>CO</div>
+        <div>DBMS</div>
+        <div>OOPs</div>
+
+        <div>12-1</div>
+        <div>Python</div>
+        <div>Java</div>
+        <div>Electronics</div>
+        <div>Deep learning</div>
+        <div>OOPs</div>
+
+        <div>1-2</div>
+        <div class="lunch">Lunch</div>
+        <div class="lunch">Lunch</div>
+        <div class="lunch">Lunch</div>
+        <div class="lunch">Lunch</div>
+        <div class="lunch">Lunch</div>
+        
+        <div>2-3</div>
+        <div>Java</div>
+        <div></div>
+        <div>Python</div>
+        <div>Mechanical</div>
+        <div>OS</div>
+
+        <div>3-4</div>
+        <div>Java</div>
+        <div>DBMS</div>
+        <div></div>
+        <div>ML</div>
+        <div>OS</div>
+    </div>
 </body>
 
 </html>
