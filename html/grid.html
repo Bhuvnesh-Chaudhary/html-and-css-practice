@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+
+<body>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-areas:
+                "header header"
+                "sidebar content"
+                "footer footer";
+            gap: 20px;
+            height: 300px;
+            align-items: center;
+        }
+
+        .header {
+            grid-area: header;
+            border: 2px solid black;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            border: 2px solid black;
+        }
+
+        .content {
+            grid-area: content;
+            border: 2px solid black;
+        }
+
+        .footer {
+            grid-area: footer;
+            border: 2px solid black;
+        }
+        .container1 {
+    display: grid;
+    height: 300px;
+    border: 2px solid black;
+
+    margin-bottom:20px;
+    place-items:center;
+}
+
+.box {
+    border: 2px solid red;
+    width:200px;
+    height:200px;
+    place-items:center;
+    display:grid
+}
+.container2{
+    display:grid;
+    width:500px;
+    height: 300px;
+    grid-template-columns: 100px ;
+    border:2px solid black;
+    place-content: center;
+}
+.box1{
+    border:2px solid red;
+}
+    </style>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Content</div>
+        <div class="footer">Footer</div>
+    </div>
+
+    <div class="container1">
+        <div class="box">BOX</div>
+    </div>
+
+    <div class="container2">
+        <div class="box1">Box1</div>
+        <!-- <div class="box1">Box2</div> -->
+    </div>
+    
+</body>
+
+</html>
